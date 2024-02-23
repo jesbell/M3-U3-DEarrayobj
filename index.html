@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+    <style>
+        table,
+        th,
+        td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        table {
+          margin: 20px;
+        }
+      </style>
+</head>
+<script>
+document.write('<p>Estadisticas centro medico ñuñoa</p>');
+
+
+
+/* document.write(`<p>Cantidad de atenciones para Radiología: ${radiologia.length}</p>`);
+document.write(`<p>Cantidad de atenciones para Traumatología: ${traumatologia.length}</p>`);
+document.write(`<p>Cantidad de atenciones para Dental: ${dental.length}</p>`);
+
+
+document.write(`<p>Primera atencion: ${radiologia[0].paciente} - ${radiologia[0].prevision} | Última atención: ${radiologia[radiologia.length -1].paciente} - ${radiologia[radiologia.length -1].prevision}.</p>`);
+document.write(`<p>Primera atencion: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length -1].paciente} - ${traumatologia[traumatologia.length -1].prevision}.</p>`);
+document.write(`<p>Primera atencion: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length -1].paciente} - ${dental[dental.length -1].prevision}.</p>`);
+ */
+</script>
+<body>
+    <section>
+        <h3>Traumatologia</h3>
+        <table id="tabla-traumatologia"></table>
+    </section>
+    <section>
+        <h3>Radiologia</h3>
+        <table id="tabla-radiologia"></table>
+    </section>
+    <section>
+        <h3>Dental</h3>
+        <div id="info-dental"></div>
+    </section>
+    <script src="assets/js/traumatologia.js"></script>
+    <script src="assets/js/radiologia.js"></script>
+    <script src="assets/js/dental.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
