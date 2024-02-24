@@ -15,14 +15,14 @@ traumatologia.push({hora: '10:00', especialista: 'RAUL LOYOLA', paciente: 'CARME
 traumatologia.push({hora: '10:30', especialista: 'ANTONIO LARENAS', paciente: 'PABLO LOAYZA', rut: '13453234-1', prevision: 'ISAPRE'});
 traumatologia.push({hora: '12:00', especialista: 'MATIAS ARAVENA', paciente: 'SUSANA POBLETE', rut: '14345656-6', prevision: 'FONASA'});
 
-
+/* Ordenando según la hora */
 traumatologia.sort((a, b) => {
     const hrA = new Date(`2000/01/01 ${a.hora}`);
     const hrB = new Date(`2000/01/01 ${b.hora}`);
     return hrA - hrB;
 });
 
-var texto_traumatologia =
+/* var texto_traumatologia =
   "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVISION</th></tr>";
 
 for (var i = 0; i < traumatologia.length; i++) {
@@ -35,4 +35,15 @@ for (var i = 0; i < traumatologia.length; i++) {
                         </tr>`;
 }
 
-document.getElementById("tabla-traumatologia").innerHTML = texto_traumatologia;
+document.getElementById("tabla-traumatologia").innerHTML = texto_traumatologia; */
+
+
+/* Requrimiento 6, filtrando pacientes fonasa */
+const fonasaTraumatologia = traumatologia.filter(cita => cita.prevision === "FONASA");
+var texto_fonasa = '';
+
+for (var i = 0; i < fonasaTraumatologia.length; i++) {
+    texto_fonasa += `<p>${fonasaTraumatologia[i].paciente} - ${fonasaTraumatologia[i].prevision} </p>`;
+}
+
+document.getElementById("traumatologia-fonasaListado").innerHTML = texto_fonasa;
