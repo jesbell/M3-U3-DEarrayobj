@@ -7,9 +7,23 @@ var dental = [
     {hora: '14:00', especialista: 'RAQUEL VILLASECA',       paciente: 'ANA SEPULVEDA',  rut: '14441281-0', prevision: 'ISAPRE'},
 ];
 
+/* Requerimiento 3 */
 var texto_dental = '';
 for (var i = 0; i < dental.length; i++) {
     texto_dental += `<p>${dental[i].hora} - ${dental[i].especialista} - ${dental[i].paciente} - ${dental[i].rut} - ${dental[i].prevision} </p>`;
 }
   
 document.getElementById("info-dental").innerHTML = texto_dental;
+
+/* Requerimiento 5 */
+
+const isapresDental = dental.filter(cita => cita.prevision === "ISAPRE");
+var texto_isapre = '';
+
+for (var i = 0; i < isapresDental.length; i++) {
+    texto_isapre += `<p>${isapresDental[i].paciente} - ${isapresDental[i].prevision} </p>`;
+}
+
+document.getElementById("dental-isapreListado").innerHTML = texto_isapre;
+
+

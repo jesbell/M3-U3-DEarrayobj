@@ -6,3 +6,4 @@ for (var i = 0; i < todosArrays.length; i++) {
 }
 
 document.getElementById("pacientes-listado").innerHTML = texto_paciente;
+
