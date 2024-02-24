@@ -8,18 +8,3 @@ var radiologia = [
 
 radiologia.shift();
 radiologia.pop();
-
-var texto_radiologia =
-  "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVISION</th></tr>";
-
-for (var i = 0; i < radiologia.length; i++) {
-  texto_radiologia += `<tr>
-                        <td>${radiologia[i].hora}</td>
-                        <td>${radiologia[i].especialista}</td>
-                        <td>${radiologia[i].paciente}</td>
-                        <td>${radiologia[i].rut}</td>
-                        <td>${radiologia[i].prevision}</td>
-                      </tr>`;
-}
-
-document.getElementById("tabla-radiologia").innerHTML = texto_radiologia;

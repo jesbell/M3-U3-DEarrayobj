@@ -22,21 +22,6 @@ traumatologia.sort((a, b) => {
     return hrA - hrB;
 });
 
-/* var texto_traumatologia =
-  "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVISION</th></tr>";
-
-for (var i = 0; i < traumatologia.length; i++) {
-  texto_traumatologia += `<tr>
-                          <td>${traumatologia[i].hora}</td>
-                          <td>${traumatologia[i].especialista}</td>
-                          <td>${traumatologia[i].paciente}</td>
-                          <td>${traumatologia[i].rut}</td>
-                          <td>${traumatologia[i].prevision}</td>
-                        </tr>`;
-}
-
-document.getElementById("tabla-traumatologia").innerHTML = texto_traumatologia; */
-
 
 /* Requrimiento 6, filtrando pacientes fonasa */
 const fonasaTraumatologia = traumatologia.filter(cita => cita.prevision === "FONASA");
