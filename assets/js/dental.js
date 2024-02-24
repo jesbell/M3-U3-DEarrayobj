@@ -15,7 +15,7 @@ for (var i = 0; i < dental.length; i++) {
   
 document.getElementById("info-dental").innerHTML = texto_dental;
 
-/* Requerimiento 5 */
+/* Requerimiento 5, filtrando pacientes isapre */
 
 const isapresDental = dental.filter(cita => cita.prevision === "ISAPRE");
 var texto_isapre = '';
